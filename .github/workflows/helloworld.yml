@@ -1,0 +1,19 @@
+name: "hello world workflow"
+
+# Control when the action will run - Trigger the workflow on push to master or production branch
+on:
+  push:
+    branches:
+      - master   # Fixed spacing & typo
+      - production   # Fixed spelling mistake (productin ➡️ production)
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest   # Fixed spelling mistake (ubantu ➡️ ubuntu-latest)
+
+    steps:
+    #   - name: "Checkout code"
+    #     uses: actions/checkout@v4   # This step is required to clone the repo code
+
+      - name: "Print hello world"
+        run: echo "Hello World"
