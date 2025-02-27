@@ -17,3 +17,6 @@ jobs:
 
       - name: "Print hello world"
         run: echo "Hello World"
+      
+      - name: "print current date"
+        run: date
