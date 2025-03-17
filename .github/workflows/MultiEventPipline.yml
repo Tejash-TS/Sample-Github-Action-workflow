@@ -1,0 +1,13 @@
+name : "multi event pipeline / workflow "  #name of the pipeline
+
+on:
+    push:  # event whenever a push is made tro reposetry inn mastre branch
+        branches:
+            - master
+
+job: 
+    on-push:  #job name
+        runs-on: ubantu-latest
+        steps: # steps to be executed in the job
+            - name: "running on master push"
+              run: echo "Running on master push"
