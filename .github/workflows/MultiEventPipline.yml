@@ -4,6 +4,7 @@ on:
     push:  # event whenever a push is made tro reposetry inn mastre branch
         branches:
             - master
+            - test
 
 job: 
     on-push:  #job name
