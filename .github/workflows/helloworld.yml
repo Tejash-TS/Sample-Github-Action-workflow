@@ -4,12 +4,11 @@ name: "hello world workflow"
 on:
   push:
     branches:
-      - master   # Fixed spacing & typo
-      - production   # Fixed spelling mistake (productin ➡️ production)
-
+      - master   
+      - production   
 jobs:
   hello_world:
-    runs-on: ubuntu-latest   # Fixed spelling mistake (ubantu ➡️ ubuntu-latest)
+    runs-on: ubuntu-latest   
 
     steps:
     #   - name: "Checkout code"
